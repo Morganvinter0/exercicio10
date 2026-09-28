@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parquimetro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Cabeçalho-->
+    <div class="container-1">
+    <header>
+        <img src="/Imagens/estacionamento.png" class="imgestacionamento">
+        <h1>Estacionamento rápido</h1>
+        <h2 class="parada">Que tal dar uma parada?</h2>
+        <p>Deposite seu saldo e selecione um plano.</p>
+
+    <div id="tempo" class="tempo">
+        <h2 class="tempoTexto">Tempo:</h2>
+        <h4 id="tempoCorrido"></h4>
+    </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2 class="saldo" id="saldo">Saldo: R$ 0,00</h2>
+
+            <!--Formulário-->
+            <form>
+                <input class="depositar" id="iptdepositar" type="number" placeholder="R$ 0,00" min="1" max="100" required>
+                <button id="btndeposito" type="button">Depositar</button>
+            </form>
+
+            <!--Botões-->
+            <div id="btns" class="btns">
+                <button id="basico" class="basico">
+                    <h5 class="plano">Básico</h5>
+                    <h2>R$1,00</h2>
+                    <h5>30 minutos</h5>
+                </button>
+
+                <button id="estrela" class="estrela">
+                    <h5 class="plano">Estrela</h5>
+                    <h2>R$1,75</h2>
+                    <h5>60 minutos</h5>
+                </button>
+
+                <button id="full" class="full" type="button">
+                    <h5 class="plano">Full</h5>
+                    <h2>R$3,00</h2>
+                    <h5>120 minutos</h5>
+                </button>
+            </div>
+
+            <button id="btncalcular" class="btncalcular" type="button">Calcular</button>
+
+            <button class="selecionado"></button>
+        </div>
+    </main>
+    </div>
+    <script type="module" src="/js/app.js"></script>
+</body>
+</html>
